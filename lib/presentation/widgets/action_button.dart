@@ -22,7 +22,7 @@ class ActionButton extends StatelessWidget {
     final appTheme = AppTheme.of(context);
 
     return Material(
-      color: bgColor ?? appTheme.colors.red,
+      color: bgColor ?? appTheme.colors.mainSolid,
       borderRadius: BorderRadius.all(appTheme.radius.large),
       child: InkWell(
         borderRadius: BorderRadius.all(appTheme.radius.large),
@@ -37,7 +37,7 @@ class ActionButton extends StatelessWidget {
           child: Center(
             child: Text(
               title,
-              style: appTheme.typography.sp14w700.copyWith(
+              style: appTheme.typography.spMedium500.copyWith(
                 color: textColor ?? Colors.white,
               ),
             ),
