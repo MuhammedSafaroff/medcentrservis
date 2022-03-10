@@ -40,7 +40,7 @@ class CategoryItem extends StatelessWidget {
             Container(
               height: 58.h,
               width: 71.w,
-              padding: EdgeInsets.symmetric(vertical: 14.h),
+              padding: EdgeInsets.symmetric(vertical: 12.h),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(appTheme.radius.medium),
                 gradient: LinearGradient(
@@ -82,7 +82,7 @@ class CategoryItem extends StatelessWidget {
                   fontSize: 20.w,
                   color: appTheme.colors.mainSolid,
                 ),
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.left,
               ),
             ),
           ],

@@ -18,11 +18,10 @@ class _Images {
   final aboutDrawer = '$_basePathImage/about_drawer.png';
   final campaignDrawer = '$_basePathImage/campaign_drawer.png';
   final locationDrawer = '$_basePathImage/location_drawer.png';
+  final drawerTop = '$_basePathImage/drawer_top.png';
 
   //svg
   final menuBurger = '$_basePathSvg/menu_burger.svg';
   final notificationIcon = '$_basePathSvg/notification_icon.svg';
   final telIcon = '$_basePathSvg/tel_icon.svg';
-  //drawer
-  final drawerTop = '$_basePathSvg/drawer_top.svg';
 }

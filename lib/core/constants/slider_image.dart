@@ -95,7 +95,7 @@ List<Map<String, String>> categoryImageTitle = [
   {
     "title": "Годовые\nпрограммы",
     "image": "assets/svg/category/c18.svg",
-    "image1": "assets/svg/category/c18.svg",
+    "image1": "assets/svg/category/c18_2.svg",
   },
   {
     "title": "Реабилитация\nпосле COVID-19",

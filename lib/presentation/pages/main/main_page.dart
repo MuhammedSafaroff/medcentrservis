@@ -19,13 +19,10 @@ class MainPage extends StatelessWidget {
         gKey: _key,
       ),
       drawer: const CustomDrawer(),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.w),
-        child: BlocBuilder<NavigationCubit, int>(
-          builder: (context, state) {
-            return PageList.pageList[state];
-          },
-        ),
+      body: BlocBuilder<NavigationCubit, int>(
+        builder: (context, state) {
+          return PageList.pageList[state];
+        },
       ),
     );
   }
