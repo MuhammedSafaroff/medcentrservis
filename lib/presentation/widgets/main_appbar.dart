@@ -38,41 +38,46 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 8.w),
-                  child: InkWell(
-                    onTap: isBack
-                        ? () {
-                            Navigator.pop(context);
-                          }
-                        : () {
-                            gKey.currentState!.openDrawer();
-                          },
-                    child: Container(
-                      height: 45.w,
-                      width: 45.w,
-                      padding: EdgeInsets.only(bottom: 12.w, top: 12.w),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color:
-                                appTheme.colors.shadowColor.withOpacity(0.15),
-                            spreadRadius: 0,
-                            blurRadius: 5,
-                            offset: const Offset(0, 4),
-                          ),
-                        ],
-                      ),
-                      child: isBack
-                          ? Icon(
-                              Icons.arrow_back,
-                              size: 28,
-                              color: appTheme.colors.secondarySolid,
-                            )
-                          : SvgPicture.asset(
-                              Assets.images.menuBurger,
-                              width: 20.w,
+                  child: Material(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(45.w),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(45.w),
+                      onTap: isBack
+                          ? () {
+                              Navigator.pop(context);
+                            }
+                          : () {
+                              gKey.currentState!.openDrawer();
+                            },
+                      child: Container(
+                        height: 45.w,
+                        width: 45.w,
+                        padding: EdgeInsets.only(bottom: 12.w, top: 12.w),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color:
+                                  appTheme.colors.shadowColor.withOpacity(0.15),
+                              spreadRadius: 0,
+                              blurRadius: 5,
+                              offset: const Offset(0, 4),
                             ),
+                          ],
+                        ),
+                        child: isBack
+                            ? Icon(
+                                Icons.arrow_back,
+                                size: 28,
+                                color: appTheme.colors.secondarySolid,
+                              )
+                            : SvgPicture.asset(
+                                Assets.images.menuBurger,
+                                width: 20.w,
+                              ),
+                      ),
                     ),
                   ),
                 ),
@@ -83,56 +88,66 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
                 const Spacer(),
                 Padding(
                   padding: EdgeInsets.only(right: 16.w),
-                  child: InkWell(
-                    onTap: () {},
-                    child: Container(
-                      height: 45.w,
-                      width: 45.w,
-                      padding: EdgeInsets.only(bottom: 7.w, top: 13.w),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color:
-                                appTheme.colors.shadowColor.withOpacity(0.15),
-                            spreadRadius: 0,
-                            blurRadius: 5,
-                            offset: const Offset(0, 4),
-                          ),
-                        ],
-                      ),
-                      child: SvgPicture.asset(
-                        Assets.images.telIcon,
-                        width: 17.w,
+                  child: Material(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(45.w),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(45.w),
+                      onTap: () {},
+                      child: Container(
+                        height: 45.w,
+                        width: 45.w,
+                        padding: EdgeInsets.only(bottom: 7.w, top: 13.w),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color:
+                                  appTheme.colors.shadowColor.withOpacity(0.15),
+                              spreadRadius: 0,
+                              blurRadius: 5,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: SvgPicture.asset(
+                          Assets.images.telIcon,
+                          width: 17.w,
+                        ),
                       ),
                     ),
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(right: 8.w),
-                  child: InkWell(
-                    onTap: () {},
-                    child: Container(
-                      height: 45.w,
-                      width: 45.w,
-                      padding: EdgeInsets.only(bottom: 10.w, top: 10.w),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color:
-                                appTheme.colors.shadowColor.withOpacity(0.15),
-                            spreadRadius: 0,
-                            blurRadius: 5,
-                            offset: const Offset(0, 4),
-                          ),
-                        ],
-                      ),
-                      child: SvgPicture.asset(
-                        Assets.images.notificationIcon,
-                        width: 17.w,
+                  child: Material(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(45.w),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(45.w),
+                      onTap: () {},
+                      child: Container(
+                        height: 45.w,
+                        width: 45.w,
+                        padding: EdgeInsets.only(bottom: 10.w, top: 10.w),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color:
+                                  appTheme.colors.shadowColor.withOpacity(0.15),
+                              spreadRadius: 0,
+                              blurRadius: 5,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: SvgPicture.asset(
+                          Assets.images.notificationIcon,
+                          width: 17.w,
+                        ),
                       ),
                     ),
                   ),

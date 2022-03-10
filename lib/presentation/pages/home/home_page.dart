@@ -1,9 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:medcentrservis/core/constants/assets.dart';
 import 'package:medcentrservis/core/constants/slider_image.dart';
 import 'package:medcentrservis/presentation/pages/home/widgets/home_item.dart';
+import 'package:medcentrservis/presentation/widgets/custom_drawer.dart';
 import 'package:responsiveness/responsiveness.dart';
 
 import '../../../core/app_theme/app_theme.dart';
@@ -23,6 +23,7 @@ class HomePage extends StatelessWidget {
       appBar: MainAppBar(
         gKey: _key,
       ),
+      drawer: const CustomDrawer(),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w),
         child: CustomScrollView(
