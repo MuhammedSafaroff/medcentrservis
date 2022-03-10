@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:medcentrservis/presentation/cubit/navigation/navigation_cubit.dart';
 import 'package:medcentrservis/presentation/widgets/drawer_item.dart';
 import 'package:responsiveness/responsiveness.dart';
 
@@ -43,9 +45,23 @@ class CustomDrawer extends StatelessWidget {
               Assets.images.drawerTop,
               // width: double.maxFinite,
             ),
-            DrawerItem(title: "Наши Врачи", image: Assets.images.doctorDrawer),
             DrawerItem(
-                title: "Наши услуги", image: Assets.images.serviceDrawer),
+              title: "Главная",
+              image: Assets.images.homeDrawer,
+              onTap: () {
+                context.read<NavigationCubit>().change(0);
+                Navigator.pop(context);
+              },
+            ),
+            DrawerItem(
+              title: "Наши услуги",
+              image: Assets.images.serviceDrawer,
+              onTap: () {
+                context.read<NavigationCubit>().change(1);
+                Navigator.pop(context);
+              },
+            ),
+            DrawerItem(title: "Наши Врачи", image: Assets.images.doctorDrawer),
             DrawerItem(title: "О компании", image: Assets.images.aboutDrawer),
             DrawerItem(
                 title: "Акции и скидки", image: Assets.images.campaignDrawer),

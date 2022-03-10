@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:medcentrservis/presentation/cubit/navigation/navigation_cubit.dart';
+import 'package:medcentrservis/presentation/pages/main/main_page.dart';
 import 'package:responsiveness/responsiveness.dart';
-import 'package:medcentrservis/presentation/pages/home/home_page.dart';
 import 'package:medcentrservis/presentation/routers/app_router.dart';
 
 import '../core/app_theme/app_theme.dart';
@@ -33,7 +35,10 @@ class App extends StatelessWidget {
                   location: BannerLocation.topStart,
                   message: 'dev',
                   color: Colors.cyan,
-                  child: HomePage(),
+                  child: BlocProvider(
+                    create: (context) => NavigationCubit(),
+                    child: MainPage(),
+                  ),
                 ),
               ),
             );

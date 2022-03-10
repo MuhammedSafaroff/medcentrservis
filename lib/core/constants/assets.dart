@@ -12,6 +12,7 @@ class _Images {
   final menuCount2 = '$_basePathImage/menu_count2.png';
   final menuCount3 = '$_basePathImage/menu_count3.png';
 
+  final homeDrawer = '$_basePathImage/home_drawer.png';
   final doctorDrawer = '$_basePathImage/doctor_drawer.png';
   final serviceDrawer = '$_basePathImage/service_drawer.png';
   final aboutDrawer = '$_basePathImage/about_drawer.png';
