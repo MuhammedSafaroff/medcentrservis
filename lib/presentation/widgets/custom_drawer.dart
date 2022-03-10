@@ -66,7 +66,13 @@ class CustomDrawer extends StatelessWidget {
             DrawerItem(
                 title: "Акции и скидки", image: Assets.images.campaignDrawer),
             DrawerItem(
-                title: "Адреса клиники", image: Assets.images.locationDrawer),
+              title: "Адреса клиники",
+              image: Assets.images.locationDrawer,
+              onTap: () {
+                context.read<NavigationCubit>().change(2);
+                Navigator.pop(context);
+              },
+            ),
             const SizedBox(height: 22),
           ],
         ),

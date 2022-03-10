@@ -4,6 +4,8 @@
         android:label="medcentrservis"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyDVLtb8e_ajGvDqisDSPqym8xA_gtc4YbE"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
